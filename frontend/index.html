@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart College CMS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ NAVBAR ══════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <div class="logo-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <div>
+        <div class="logo-text">Smart College <span>CMS</span></div>
+        <div class="logo-sub">Complaint Management System</div>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#register">Register Complaint</a></li>
+      <li><a href="#track">Track Complaint</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="admin.html" class="btn-admin"><i class="fa-solid fa-lock"></i> Admin Login</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#register">Register Complaint</a>
+    <a href="#track">Track Complaint</a>
+    <a href="#contact">Contact</a>
+    <a href="admin.html" class="mobile-admin"><i class="fa-solid fa-lock"></i> Admin Login</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════ HERO ═══════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+  <div class="container hero-inner">
+    <div class="hero-content" data-aos="fade-right">
+      <div class="hero-badge">
+        <i class="fa-solid fa-circle-check"></i> Trusted by 5000+ Students
+      </div>
+      <h1>Smart College<br><span class="highlight">Complaint</span><br>Management System</h1>
+      <p class="hero-desc">
+        Submit, track and resolve college complaints effortlessly. 
+        Whether it's about facilities, academics, or administration — 
+        we make sure your voice is heard and issues are fixed fast.
+      </p>
+      <div class="hero-btns">
+        <a href="#register" class="btn btn-primary">
+          <i class="fa-solid fa-pen-to-square"></i> Register Complaint
+        </a>
+        <a href="#track" class="btn btn-outline">
+          <i class="fa-solid fa-magnifying-glass"></i> Track Complaint
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="1240">0</span><span class="stat-label">Complaints Resolved</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="98">0</span><span class="stat-label">% Satisfaction</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="48">0</span><span class="stat-label">Hrs Avg Resolution</span></div>
+      </div>
+    </div>
+    <div class="hero-illustration" data-aos="fade-left">
+      <div class="hero-card floating">
+        <div class="hcard-header">
+          <i class="fa-solid fa-file-circle-check"></i>
+          <span>Complaint Dashboard</span>
+        </div>
+        <div class="hcard-items">
+          <div class="hcard-item resolved">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <div class="hcard-item-title">Library AC Issue</div>
+              <div class="hcard-item-sub">Resolved · 2 hrs ago</div>
+            </div>
+            <span class="badge badge-green">Resolved</span>
+          </div>
+          <div class="hcard-item pending">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <div class="hcard-item-title">WiFi in Lab Block</div>
+              <div class="hcard-item-sub">In Progress · Dept. IT</div>
+            </div>
+            <span class="badge badge-orange">In Progress</span>
+          </div>
+          <div class="hcard-item new">
+            <i class="fa-solid fa-circle-plus"></i>
+            <div>
+              <div class="hcard-item-title">Exam Schedule Issue</div>
+              <div class="hcard-item-sub">Submitted · Just now</div>
+            </div>
+            <span class="badge badge-blue">New</span>
+          </div>
+        </div>
+        <div class="hcard-progress">
+          <div class="hprog-label"><span>Monthly Resolution Rate</span><span>87%</span></div>
+          <div class="hprog-bar"><div class="hprog-fill" style="width:87%"></div></div>
+        </div>
+      </div>
+      <div class="hero-mini-card mini-card-1 floating-slow">
+        <i class="fa-solid fa-bolt"></i>
+        <span>Fast Resolution</span>
+      </div>
+      <div class="hero-mini-card mini-card-2 floating-slow2">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Secure & Private</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f7f9fd"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ SERVICES ══════════════════════════════ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="section-tag">What We Offer</div>
+      <h2>Everything You Need<br>to Resolve Issues <span class="highlight">Fast</span></h2>
+      <p>Four powerful features designed to make the complaint process smooth, transparent and efficient.</p>
+    </div>
+    <div class="services-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="service-card">
+        <div class="service-icon orange">
+          <i class="fa-solid fa-file-pen"></i>
+        </div>
+        <h3>Submit Complaint</h3>
+        <p>Easily file a complaint with all necessary details — category, department, description, and even attach supporting images.</p>
+        <a href="#register" class="service-link">File Now <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon blue">
+          <i class="fa-solid fa-radar"></i>
+        </div>
+        <h3>Track Complaint Status</h3>
+        <p>Enter your unique complaint ID and get real-time updates on the status — New, In Progress, or Resolved.</p>
+        <a href="#track" class="service-link">Track Now <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon green">
+          <i class="fa-solid fa-sliders"></i>
+        </div>
+        <h3>Admin Management</h3>
+        <p>Admins can view, assign, update and close complaints. Full dashboard with filters, stats and department routing.</p>
+        <a href="admin.html" class="service-link">Admin Panel <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon purple">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <h3>Quick Issue Resolution</h3>
+        <p>Smart auto-routing sends complaints to the right department instantly. Automated reminders ensure nothing slips through.</p>
+        <a href="#about" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ HOW IT WORKS ═══════════════════════════ -->
+<section class="section how-works" id="how">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="section-tag">Simple Process</div>
+      <h2>How It <span class="highlight">Works</span></h2>
+      <p>Four simple steps from submitting a complaint to getting it fully resolved.</p>
+    </div>
+    <div class="steps-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-icon"><i class="fa-solid fa-user-pen"></i></div>
+        <h3>Student Registers Complaint</h3>
+        <p>Student fills in the complaint form with name, roll number, department, category and a clear description.</p>
+      </div>
+
+      <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+        <h3>Admin Reviews Complaint</h3>
+        <p>Admin verifies the complaint, checks its validity and updates its status from New to Under Review.</p>
+      </div>
+
+      <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h3>Assigned to Department</h3>
+        <p>Complaint is routed to the correct department — IT, Facilities, Academics, or Administration for action.</p>
+      </div>
+
+      <div class="step-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+      <div class="step-card">
+        <div class="step-num">04</div>
+        <div class="step-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <h3>Resolved & Status Updated</h3>
+        <p>Once resolved, the status is updated in real time. Student can track and see the full resolution notes.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════ ABOUT ════════════════════════════════ -->
+<section class="section about-section" id="about">
+  <div class="container about-inner">
+    <div class="about-visual" data-aos="fade-right">
+      <div class="about-card-stack">
+        <div class="about-big-card">
+          <i class="fa-solid fa-building-columns"></i>
+          <h3>Empowering Students</h3>
+          <p>Every student deserves a platform that listens. Smart CMS bridges the gap between students and administration.</p>
+          <div class="about-pills">
+            <span class="pill pill-orange">Transparent</span>
+            <span class="pill pill-blue">Accountable</span>
+            <span class="pill pill-green">Efficient</span>
+          </div>
+        </div>
+        <div class="about-stat-card">
+          <div class="astat"><span class="astat-num">500+</span><span>Daily Active Users</span></div>
+          <div class="astat"><span class="astat-num">15+</span><span>Departments Connected</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="about-content" data-aos="fade-left">
+      <div class="section-tag">About The System</div>
+      <h2>Built to Improve <span class="highlight">Transparency</span> in College</h2>
+      <p>The Smart College Complaint Management System is a digital platform designed to modernize the way students report issues to college authorities. Traditional complaint boxes and informal requests often lead to unresolved problems and a lack of accountability.</p>
+      <p style="margin-top:1rem;">Our system creates a structured, transparent and trackable process where every complaint has a unique ID, an assigned owner, and a clear resolution timeline — ensuring nothing is ignored.</p>
+      <ul class="about-list">
+        <li><i class="fa-solid fa-check-circle"></i> 100% digital — no paper-based complaints</li>
+        <li><i class="fa-solid fa-check-circle"></i> Unique complaint ID for easy tracking</li>
+        <li><i class="fa-solid fa-check-circle"></i> Auto-routing to correct department</li>
+        <li><i class="fa-solid fa-check-circle"></i> Admin dashboard with full control</li>
+        <li><i class="fa-solid fa-check-circle"></i> Image upload support for evidence</li>
+        <li><i class="fa-solid fa-check-circle"></i> Secure data storage with privacy protection</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ REGISTER COMPLAINT ══════════════════════════ -->
+<section class="section form-section" id="register">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="section-tag">Submit Your Issue</div>
+      <h2>Register a <span class="highlight">Complaint</span></h2>
+      <p>Fill in the form below. You'll receive a unique complaint ID to track your issue.</p>
+    </div>
+    <div class="form-wrapper" data-aos="fade-up" data-aos-delay="100">
+      <form class="complaint-form" id="complaintForm" enctype="multipart/form-data">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label><i class="fa-solid fa-user"></i> Full Name</label>
+            <input type="text" name="name" placeholder="Enter your full name" required />
+          </div>
+          <div class="form-group">
+            <label><i class="fa-solid fa-id-card"></i> Roll Number</label>
+            <input type="text" name="rollNumber" placeholder="e.g. 2023IT001" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label><i class="fa-solid fa-building"></i> Department</label>
+            <select name="department" required>
+              <option value="">-- Select Department --</option>
+              <option>Computer Science</option>
+              <option>Information Technology</option>
+              <option>Mechanical Engineering</option>
+              <option>Civil Engineering</option>
+              <option>Electronics & Communication</option>
+              <option>Electrical Engineering</option>
+              <option>Administration</option>
+              <option>Library</option>
+              <option>Hostel / Facilities</option>
+              <option>Sports</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label><i class="fa-solid fa-tag"></i> Complaint Category</label>
+            <select name="category" required>
+              <option value="">-- Select Category --</option>
+              <option>Academic Issues</option>
+              <option>Faculty / Staff Behavior</option>
+              <option>Infrastructure / Facilities</option>
+              <option>Library</option>
+              <option>Hostel</option>
+              <option>Examination</option>
+              <option>Administration</option>
+              <option>IT / Network</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label><i class="fa-solid fa-align-left"></i> Complaint Description</label>
+          <textarea name="description" rows="5" placeholder="Describe your complaint in detail — what happened, when, where, and how it affected you..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label><i class="fa-solid fa-image"></i> Upload Supporting Image (Optional)</label>
+          <div class="file-drop" id="fileDrop">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <p>Drag & drop an image here or <span>click to browse</span></p>
+            <small>Supports: JPG, PNG, PDF · Max 5MB</small>
+            <input type="file" name="image" id="fileInput" accept="image/*,.pdf" />
+          </div>
+          <div class="file-preview" id="filePreview" style="display:none">
+            <i class="fa-solid fa-file-image"></i>
+            <span id="fileName"></span>
+            <button type="button" id="removeFile"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+
+        <div id="formAlert" class="form-alert" style="display:none"></div>
+
+        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+          <i class="fa-solid fa-paper-plane"></i> Submit Complaint
+        </button>
+      </form>
+
+      <div class="form-success" id="formSuccess" style="display:none">
+        <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <h3>Complaint Submitted!</h3>
+        <p>Your complaint has been registered successfully. Use the ID below to track your complaint.</p>
+        <div class="complaint-id-box">
+          <span>Complaint ID:</span>
+          <strong id="complaintIdDisplay"></strong>
+          <button onclick="copyComplaintId()" title="Copy ID"><i class="fa-solid fa-copy"></i></button>
+        </div>
+        <button class="btn btn-outline" onclick="resetForm()">Submit Another</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ TRACK COMPLAINT ══════════════════════════ -->
+<section class="section track-section" id="track">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="section-tag">Check Status</div>
+      <h2>Track Your <span class="highlight">Complaint</span></h2>
+      <p>Enter your unique complaint ID to view real-time status and updates.</p>
+    </div>
+    <div class="track-wrapper" data-aos="fade-up" data-aos-delay="100">
+      <div class="track-form">
+        <div class="track-input-group">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="trackId" placeholder="Enter Complaint ID (e.g. CMP-2024-ABC123)" />
+          <button class="btn btn-primary" onclick="trackComplaint()">Track</button>
+        </div>
+        <div id="trackResult" class="track-result" style="display:none"></div>
+        <div id="trackError" class="track-error" style="display:none">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span>No complaint found with this ID. Please check and try again.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ TESTIMONIALS ════════════════════════════ -->
+<section class="section testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="section-tag">Student Voices</div>
+      <h2>What Students <span class="highlight">Say</span></h2>
+      <p>Real feedback from students who used the system.</p>
+    </div>
+    <div class="testimonials-grid" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="testi-card">
+        <div class="testi-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p>"I reported a broken projector in Lab 3 and it was fixed within 24 hours! This system actually works — no more running after HODs."</p>
+        <div class="testi-author">
+          <div class="testi-avatar orange">RS</div>
+          <div>
+            <strong>Rohit Sharma</strong>
+            <span>CSE, Semester 5</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card featured">
+        <div class="testi-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p>"The tracking feature is amazing. I could see exactly which department was handling my complaint and when it was resolved. Complete transparency!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar blue">MP</div>
+          <div>
+            <strong>Manasvi Patil</strong>
+            <span>IT, Semester 3</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>"Submitted a hostel maintenance complaint with a photo. The admin responded and sent a technician next morning. Highly recommend this platform."</p>
+        <div class="testi-author">
+          <div class="testi-avatar green">SS</div>
+          <div>
+            <strong>Shubham Shinde</strong>
+            <span>Mechanical, Semester 4</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ CTA ════════════════════════════════ -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner" data-aos="fade-up">
+      <div class="cta-icon-big"><i class="fa-solid fa-bullhorn"></i></div>
+      <h2>Have an Issue in College?</h2>
+      <p>Don't stay silent. Submit your complaint now and let us resolve it for you — fast, transparent, and accountable.</p>
+      <a href="#register" class="btn btn-white">
+        <i class="fa-solid fa-pen-to-square"></i> Register Complaint Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CONTACT ══════════════════════════════ -->
+<section class="section contact-section" id="contact">
+  <div class="container contact-inner">
+    <div class="contact-info" data-aos="fade-right">
+      <div class="section-tag">Get In Touch</div>
+      <h2>Contact <span class="highlight">Us</span></h2>
+      <p>Have a question about the system? Reach out to the CMS team at your college.</p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div><strong>Email</strong><span>cms@smartcollege.edu.in</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div><strong>Phone</strong><span>+91 7498430968</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div><strong>Address</strong><span>Goverment Polytechnic Mumbai, Mumbai, Maharashtra 400051</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-box" data-aos="fade-left">
+      <form id="contactForm" onsubmit="handleContact(event)">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Full name" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="you@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="4" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+        <div id="contactSuccess" style="display:none;margin-top:1rem;text-align:center;color:#16a34a;font-weight:500">
+          <i class="fa-solid fa-check"></i> Message sent successfully!
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ FOOTER ═════════════════════════════════ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="logo" style="margin-bottom:1rem;display:inline-flex">
+        <div class="logo-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div>
+          <div class="logo-text" style="color:#fff">Smart College <span>CMS</span></div>
+          <div class="logo-sub" style="color:#94a3b8">Complaint Management System</div>
+        </div>
+      </a>
+      <p class="footer-desc">Empowering students by making the complaint process transparent, fast and accountable.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#register">Register Complaint</a></li>
+        <li><a href="#track">Track Complaint</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links-col">
+      <h4>Departments</h4>
+      <ul>
+        <li><a href="#">Computer Science</a></li>
+        <li><a href="#">Information Technology</a></li>
+        <li><a href="#">Mechanical Engineering</a></li>
+        <li><a href="#">Administration</a></li>
+        <li><a href="#">Facilities</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fa-solid fa-envelope"></i> sanketchavanedu@gmail.com</li>
+        <li><i class="fa-solid fa-phone"></i> +91 7498430968</li>
+        <li><i class="fa-solid fa-location-dot"></i> Mumbai, Maharashtra</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Smart College Complaint Management System. All rights reserved.</span>
+      <span>Built with <i class="fa-solid fa-heart" style="color:#FF6B2B"></i> for students</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
