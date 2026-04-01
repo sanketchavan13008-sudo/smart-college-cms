@@ -2,7 +2,7 @@
    SMART COLLEGE CMS — admin.js
    ════════════════════════════════════════════════ */
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://smart-college-cms-api.onrender.com';
 
 // ── ADMIN CREDENTIALS ─────────────────────────
 const ADMIN_USER = 'Sanket Chavan';
