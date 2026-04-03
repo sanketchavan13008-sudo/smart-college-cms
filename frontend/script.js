@@ -2,7 +2,7 @@
    SMART COLLEGE CMS — script.js
    ════════════════════════════════════════════════ */
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://smart-college-cms.onrender.com';
 
 // ── NAVBAR ─────────────────────────────────────
 const navbar   = document.getElementById('navbar');
